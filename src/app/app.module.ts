@@ -1,16 +1,19 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppComponent } from './app.component';
+import { PlotlyModule } from 'angular-plotly.js';
+
+import { PlotlyExampleComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    PlotlyExampleComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    PlotlyModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [PlotlyExampleComponent]
 })
 export class AppModule { }
